@@ -1,0 +1,148 @@
+/* landing-style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e64a19;
+}
+
+.alternating-section {
+    padding: 60px 100px;
+    background-color: #fff;
+}
+
+.alternating-section.reverse {
+    background-color: #f8f8f8;
+}
+
+.alternating-section .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.alternating-section img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.alternating-section .text {
+    width: 45%;
+}
+
+.alternating-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.alternating-section p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #e64a19;
+}
+
+@media (max-width: 768px) {
+    .alternating-section .content {
+        flex-direction: column;
+    }
+
+    .alternating-section img,
+    .alternating-section .text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero h2 {
+        font-size: 1.4em;
+    }
+}
