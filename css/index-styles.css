@@ -61,6 +61,7 @@ body {
 
 .nav-links a:hover {
     color: var(--primary-color);
+    transform: translateY(-10px);
 }
 
 /* Hero Section */
