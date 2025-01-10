@@ -13,6 +13,9 @@ body {
     background-color: #f4f4f4;
 }
 
+.content:hover{
+    transform: translateY(-30px);
+}
 /* Hero Section Styling */
 .hero {
     position: relative;
