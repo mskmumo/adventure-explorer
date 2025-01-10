@@ -1,7 +1,7 @@
 /* Blog Header */
 .blog-header {
 	padding: 60px 0;
-	background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assets/OIP.jpg');
+	background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assets/travelstories.jpg');
 	background-size: cover;
 	background-position: center;
 	color: var(--text-light);
@@ -265,8 +265,8 @@
 /* Newsletter Section */
 .newsletter-signup {
 	padding: 80px 0;
-	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../assets/OIP.jpg');
-	background-size: cover;
+	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../assets/newsletter.jpg');
+	background-size: contain;
 	background-position: center;
 	color: white;
 	text-align: center;
