@@ -54,7 +54,6 @@
     text-decoration: underline;
 }
 
-
 /* Hero Section Styling */
 .hero {
     position: relative;
@@ -67,11 +66,10 @@
     flex-direction: column;
     padding: 0 20px;
     background-image: url('../assets/culture.jpg'); /* Replace with your image path */
-    background-size: cover;  /* Ensures the image covers the entire area */
-    background-position: center center; /* Centers the image to avoid space */
-    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-
 
 .hero-content {
     z-index: 1;
@@ -87,4 +85,217 @@
     font-size: 1.8em;
     margin-top: 10px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* About Section Styling */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background contrast */
+}
+
+.about-content {
+    display: flex;
+    gap: 20px;
+}
+
+.about-text {
+    width: 60%;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333; /* Dark text for readability */
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Preview Section Styles */
+.africa-wonders-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.africa-wonders-section h1 {
+    font-size: 2.5em;
+    color: #000; /* Updated to black color */
+    margin-bottom: 20px;
+}
+
+.africa-wonders-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.wonder-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.wonder-item {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.wonder-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.wonder-item h2 {
+    font-size: 1.5em;
+    color: #ff5722;
+    padding: 10px 15px;
+}
+
+.wonder-item p {
+    font-size: 1em;
+    color: #555;
+    padding: 0 15px 15px;
+}
+
+.wonder-item .cta-btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.wonder-item .cta-btn:hover {
+    background-color: #e64a19; /* Darker shade of button color on hover */
+}
+
+/* Hover effect on cards */
+.wonder-item:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Footer Section Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    color: #ff5722;
+    margin-bottom: 15px;
+}
+
+.footer-column p, .footer-column a {
+    color: #ccc;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-column a:hover {
+    color: #ff5722;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #ff5722;
+}
+
+/* Social Media Icons */
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #ccc;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff5722;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.85em;
+    color: #999;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links {
+        margin-top: 15px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-image img {
+        margin-top: 20px;
+    }
 }
