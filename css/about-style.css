@@ -47,11 +47,36 @@
     transform: scaleX(1);
 }
 
-/* Active Link Styling */
-.nav-link.active {
-    color: #ff5722; /* Active link color */
-    font-weight: bold;
-    text-decoration: underline;
+/* Base styling for nav links */
+.nav-link {
+    position: relative;
+    text-decoration: none; /* Disable default underline */
+    padding-bottom: 5px; /* Add some space to the bottom for the underline */
+}
+
+/* Create an underline on hover using the ::after pseudo-element */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: transparent; /* Start with invisible */
+    transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
+    width: 0;
+}
+
+/* On hover, the underline becomes visible */
+.nav-link:hover::after {
+    background-color: #ff5722; /* Underline color on hover */
+    width: 100%;
+}
+
+/* Active link underline stays visible */
+.nav-link.active::after {
+    width: 100%; /* Full width for the active page underline */
+    background-color: #ff5722; /* Underline color */
 }
 
 /* Hero Section Styling */

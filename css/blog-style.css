@@ -1,0 +1,406 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff8c00;
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-explore {
+    padding: 15px 30px;
+    background-color: #ff8c00;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-explore:hover {
+    background-color: #e07b00;
+}
+
+/* Navigation Styles */
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+.navbar li {
+    font-size: 1.2em;
+}
+
+.navbar a {
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff5722;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff5722;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Base styling for nav links */
+.nav-link {
+    position: relative;
+    text-decoration: none; /* Disable default underline */
+    padding-bottom: 5px; /* Add some space to the bottom for the underline */
+}
+
+/* Create an underline on hover using the ::after pseudo-element */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: transparent; /* Start with invisible */
+    transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
+    width: 0;
+}
+
+/* On hover, the underline becomes visible */
+.nav-link:hover::after {
+    background-color: #ff5722; /* Underline color on hover */
+    width: 100%;
+}
+
+/* Active link underline stays visible */
+.nav-link.active::after {
+    width: 100%; /* Full width for the active page underline */
+    background-color: #ff5722; /* Underline color */
+}
+
+
+/* Blog Content Section */
+.blog-content {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.blog-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.blog-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog-item {
+    flex: 1 1 45%;
+    margin-bottom: 30px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-item h3 {
+    font-size: 1.5rem;
+    color: #ff8c00;
+    margin-bottom: 10px;
+}
+
+.blog-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Seasons Travel Section */
+.seasons-travel {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.seasons-travel h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.seasons-travel p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.seasonal-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.season-item {
+    flex: 1 1 45%;
+    margin: 20px;
+    max-width: 500px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.season-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.season-item h3 {
+    font-size: 1.5rem;
+    color: #ff8c00;
+    margin-bottom: 10px;
+}
+
+.season-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Popular Travel Times Section */
+.travel-times {
+    padding: 60px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.travel-times h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff8c00;
+}
+
+.travel-times p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.btn-book {
+    padding: 12px 25px;
+    background-color: #ff8c00;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.btn-book:hover {
+    background-color: #e07b00;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.testimonial-item {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.testimonial-author {
+    font-size: 1rem;
+    font-style: italic;
+    color: #ff8c00;
+}
+
+/* Footer Section Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    color: #ff5722;
+    margin-bottom: 15px;
+}
+
+.footer-column p, .footer-column a {
+    color: #ccc;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-column a:hover {
+    color: #ff5722;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #ff5722;
+}
+
+/* Social Media Icons */
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #ccc;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff5722;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.85em;
+    color: #999;
+}

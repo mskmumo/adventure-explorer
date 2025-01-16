@@ -1,188 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Travel stories, tips, and news from Maisha Afrika Adventures">
-	<meta name="keywords" content="africa travel, safari blog, travel tips, african adventures">
-	<link rel="stylesheet" href="css/index-styles.css">
-	<link rel="stylesheet" href="css/blog-style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-	<title>Travel Blog - Maisha Afrika Adventures</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brian Kikuvi">
+    <link rel="stylesheet" href="css/blog-style.css">
+    <title>Maisha Afrika Adventures - Blog</title>
 </head>
 <body>
-	<nav class="navbar">
-		<div class="logo">Maisha Afrika</div>
-		<div class="nav-links">
-			<a href="landing.html">Home</a>
-			<a href="destinations.html">Destinations</a>
-			<a href="tours.html">Tours</a>
-			<a href="about.html">About</a>
-			<a href="packages.html">Packages</a>
-            <a href="accommodations.html">Accommodation</a>
-			<a href="blog.html" class="active">Blog</a>
-			<a href="contact.html">Contact</a>
-		</div>
-		<div class="toggle"></div>
-	</nav>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="landing.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li><a href="accommodations.html" class="nav-link">Accommodation</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="packages.html" class="nav-link">Packages</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
 
-	<section class="blog-header">
-		<div class="container">
-			<h1>Travel Stories & Tips</h1>
-			<div class="blog-search">
-				<input type="text" placeholder="Search articles...">
-				<button><i class="fas fa-search"></i></button>
-			</div>
-			<div class="blog-categories">
-				<a href="#" class="category-tag active">All</a>
-				<a href="#" class="category-tag">Travel Tips</a>
-				<a href="#" class="category-tag">Destinations</a>
-				<a href="#" class="category-tag">Culture</a>
-				<a href="#" class="category-tag">Wildlife</a>
-				<a href="#" class="category-tag">Adventure</a>
-			</div>
-		</div>
-	</section>
+        <video autoplay muted loop class="hero-video">
+            <source src="assets/bgdvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay">
+            <h1>Memories of Maisha Afrika</h1>
+            <p>Experience unforgettable journeys through the heart of Africa. From thrilling safaris to cultural treks and serene camps, let Maisha Afrika guide you through the ultimate adventure.</p>
+            <a href="packages.html" class="btn-explore">Start Your Journey</a>
+        </div>
+    </section>
 
-	<section class="featured-posts">
-		<div class="container">
-			<div class="featured-grid">
-				<article class="featured-post">
-					<div class="post-image">
-						<img src="assets/safari-guide.jpg" alt="Safari Experience">
-						<div class="post-category">Wildlife</div>
-					</div>
-					<div class="post-content">
-						<div class="post-meta">
-							<span><i class="far fa-calendar"></i> March 1, 2024</span>
-							<span><i class="far fa-clock"></i> 5 min read</span>
-						</div>
-						<h2>Ultimate Safari Guide: Best Time to Visit Masai Mara</h2>
-						<p>Discover the perfect timing for your Masai Mara adventure and witness the incredible wildlife spectacle...</p>
-						<div class="post-footer">
-							<a href="#" class="read-more">Read More</a>
-							<div class="post-stats">
-								<span><i class="far fa-heart"></i> 245</span>
-								<span><i class="far fa-comment"></i> 18</span>
-								<span><i class="far fa-share-square"></i> Share</span>
-							</div>
-						</div>
-					</div>
-				</article>
-				<!-- More featured posts -->
-			</div>
-		</div>
-	</section>
+    <!-- Blog Content Section -->
+    <section class="blog-content" id="explore">
+        <div class="container">
+            <h2>Discover the Adventure</h2>
+            <div class="blog-gallery">
+                <div class="blog-item">
+                    <img src="assets/The-Cultural-Safari-in-Tanzania.webp" alt="Cultural Safari Camps">
+                    <h3>Cultural Safari Camps</h3>
+                    <p>Immerse yourself in the rich heritage of Africa’s diverse cultures while enjoying the beauty of the wild.</p>
+                </div>
 
-	<section class="blog-grid">
-		<div class="container">
-			<div class="blog-sidebar">
-				<div class="sidebar-section popular-posts">
-					<h3>Popular Posts</h3>
-					<div class="popular-post">
-						<img src="assets/OIP.jpg" alt="Popular Post">
-						<div class="popular-post-content">
-							<h4>Essential Packing Tips for Safari</h4>
-							<span>March 5, 2024</span>
-						</div>
-					</div>
-					<!-- More popular posts -->
-				</div>
-				<div class="sidebar-section categories">
-					<h3>Categories</h3>
-					<ul>
-						<li><a href="#">Travel Tips (15)</a></li>
-						<li><a href="#">Destinations (23)</a></li>
-						<li><a href="#">Wildlife (18)</a></li>
-						<li><a href="#">Culture (12)</a></li>
-						<li><a href="#">Adventure (20)</a></li>
-					</ul>
-				</div>
-				<div class="sidebar-section tags">
-					<h3>Popular Tags</h3>
-					<div class="tag-cloud">
-						<a href="#" class="tag">Safari</a>
-						<a href="#" class="tag">Wildlife</a>
-						<a href="#" class="tag">Photography</a>
-						<a href="#" class="tag">Travel Tips</a>
-						<a href="#" class="tag">Adventure</a>
-					</div>
-				</div>
-			</div>
-			<div class="blog-main">
-				<article class="blog-post">
-					<div class="post-image">
-						<img src="assets/packing-essentials.jpg" alt="Blog Post">
-						<div class="post-category">Travel Tips</div>
-					</div>
-					<div class="post-content">
-						<div class="post-meta">
-							<span><i class="far fa-calendar"></i> March 10, 2024</span>
-							<span><i class="far fa-clock"></i> 3 min read</span>
-						</div>
-						<h2>10 Must-Have Items for Your African Safari</h2>
-						<p>Planning your first safari? Here's your essential packing guide to ensure you're well-prepared...</p>
-						<div class="post-footer">
-							<a href="#" class="read-more">Read More</a>
-							<div class="post-stats">
-								<span><i class="far fa-heart"></i> 182</span>
-								<span><i class="far fa-comment"></i> 12</span>
-								<span><i class="far fa-share-square"></i> Share</span>
-							</div>
-						</div>
-					</div>
-				</article>
-				<!-- More blog posts -->
-			</div>
-		</div>
-	</section>
+                <div class="blog-item">
+                    <img src="assets/wildlife trek.jpg" alt="Wildlife Treks">
+                    <h3>Wildlife Treks</h3>
+                    <p>Witness the incredible landscapes and unique wildlife as you embark on life-changing treks across Africa’s most famous trails.</p>
+                </div>
 
-	<section class="newsletter-signup">
-		<div class="container">
-			<div class="newsletter-content">
-				<h2>Stay Updated</h2>
-				<p>Subscribe to our newsletter for the latest travel tips and stories</p>
-				<form class="newsletter-form">
-					<input type="email" placeholder="Enter your email">
-					<button type="submit">Subscribe</button>
-				</form>
-			</div>
-		</div>
-	</section>
+                <div class="blog-item">
+                    <img src="assets/memories.jpg" alt="Safari Memories">
+                    <h3>Memories Captured</h3>
+                    <p>Capture every magical moment with our expert guides ensuring you get the best view of Africa’s hidden gems.</p>
+                </div>
 
-	<footer>
-		<div class="footer-content">
-			<div class="footer-section">
-				<h3>About Us</h3>
-				<p>Maisha Afrika Adventures specializes in creating unforgettable African travel experiences.</p>
-			</div>
-			<div class="footer-section">
-				<h3>Quick Links</h3>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="destinations.html">Destinations</a></li>
-					<li><a href="packages.html">Packages</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-			<div class="footer-section">
-				<h3>Contact Info</h3>
-				<p>Email: info@maishaafrika.com</p>
-				<p>Phone: +254 123 456 789</p>
-				<div class="social-links">
-					<a href="#"><i class="fab fa-facebook"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="footer-bottom">
-			<p>&copy; 2024 Maisha Afrika Adventures. All rights reserved.</p>
-		</div>
-	</footer>
+                <div class="blog-item">
+                    <img src="assets/Tanzania-Culture-Tibes-Photography-Tour-1.jpg" alt="Culture & Community">
+                    <h3>Culture & Community</h3>
+                    <p>Explore the traditions of Africa’s communities and immerse yourself in their fascinating way of life during your travels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<script src="js/index.js"></script>
-	<script src="js/blog.js"></script>
+    <!-- New Seasonal Section -->
+    <section class="seasons-travel">
+        <div class="container">
+            <h2>How Africa Changes with the Seasons</h2>
+            <p>Explore Africa’s beauty in all seasons and see how the landscapes transform throughout the year.</p>
+            
+            <!-- Seasonal Image Grid -->
+            <div class="seasonal-images">
+                <div class="season-item">
+                    <img src="assets/summer.jpg" alt="Summer Safari">
+                    <h3>Summer Safari (June-August)</h3>
+                    <p>Lush greenery and vibrant wildlife make summer safaris breathtaking.</p>
+                </div>
+                
+                <div class="season-item">
+                    <img src="assets/autumn.jpg" alt="Autumn Trek">
+                    <h3>Autumn Treks (September-November)</h3>
+                    <p>Cooler temperatures and golden hues make for perfect trekking adventures.</p>
+                </div>
+                
+                <div class="season-item">
+                    <img src="assets/winter.webp" alt="Winter Camps">
+                    <h3>Winter Camps (December-February)</h3>
+                    <p>Experience the serenity of winter camping in the wild with clear skies and starry nights.</p>
+                </div>
+
+                <div class="season-item">
+                    <img src="assets/Serengeti-Great-Migration-1536x1024.jpg" alt="Spring Wildlife">
+                    <h3>Spring Wildlife (March-May)</h3>
+                    <p>Spring brings new life, with baby animals and blossoming landscapes across Africa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Travel Times Section -->
+    <section class="travel-times">
+        <div class="container">
+            <h2>When Our Travelers Love to Visit</h2>
+            <p>Most travelers choose to visit between June and August for the perfect safari experience, but each season offers something unique.</p>
+            <a href="contact.html" class="btn-book">Plan Your Trip</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Travelers Say</h2>
+            <div class="testimonial-item">
+                <p class="testimonial-text">"Our safari with Maisha Afrika was an unforgettable experience. The guides were knowledgeable, and the scenery was breathtaking. We'll definitely be back!"</p>
+                <p class="testimonial-author">- Sarah J., California</p>
+            </div>
+            <div class="testimonial-item">
+                <p class="testimonial-text">"The cultural trek was the highlight of our trip. We felt so immersed in the traditions and learned so much about the communities. Thank you Maisha Afrika!"</p>
+                <p class="testimonial-author">- James O., Kenya</p>
+            </div>
+        </div>
+    </section>
+
+	<!-- Footer Section -->
+	<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>Maisha Afrika Adventures is your gateway to unforgettable African safaris, cultural experiences, and breathtaking landscapes. Join us and discover the essence of life through adventure.</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+            <p><i class="fas fa-phone"></i> +254 712 345 678</p>
+            <p><i class="fas fa-envelope"></i> info@maishaafrika.com</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Maisha Afrika Adventures. All Rights Reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
