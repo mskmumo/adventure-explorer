@@ -186,19 +186,77 @@
     color: #03a9f4; 
   }
   
-  @media (max-width: 991px)
-  {
-    .showcase,
-    .showcase header
-    {
-      padding: 40px;
-    }
-    .text h2
-    {
-      font-size: 3em;
-    }
-    .text h3
-    {
-      font-size: 2em;
-    }
+  /* Adjust showcase padding and layout for smaller screens */
+@media (max-width: 768px) {
+  header {
+      padding: 20px;
   }
+
+  .showcase {
+      padding: 20px;
+  }
+
+  .text h2 {
+      font-size: 2em;
+  }
+
+  .text h3 {
+      font-size: 1.5em;
+  }
+
+  .text p {
+      font-size: 0.9em;
+      max-width: 100%;
+  }
+
+  .text a {
+      font-size: 0.9em;
+      padding: 8px 20px;
+  }
+
+  .menu ul {
+      padding: 0;
+  }
+
+  .menu ul li a {
+      font-size: 20px;
+  }
+
+  .social {
+      gap: 10px;
+  }
+}
+
+/* Smaller screens (phones) */
+@media (max-width: 480px) {
+  .text h2 {
+      font-size: 1.5em;
+  }
+
+  .text h3 {
+      font-size: 1.2em;
+  }
+
+  .text p {
+      font-size: 0.8em;
+  }
+
+  .menu ul li a {
+      font-size: 18px;
+  }
+
+  .showcase {
+      padding: 10px;
+  }
+
+  .social li a {
+      transform: scale(0.4);
+  }
+
+  .toggle {
+      width: 40px;
+      height: 40px;
+      background-size: 20px;
+  }
+}
+

@@ -59,36 +59,20 @@ body {
     transform: scaleX(1);
 }
 
-/* Base styling for nav links */
-.nav-link {
-    position: relative;
-    text-decoration: none; /* Disable default underline */
-    padding-bottom: 5px; /* Add some space to the bottom for the underline */
-}
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
-/* Create an underline on hover using the ::after pseudo-element */
-.nav-link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    background-color: transparent; /* Start with invisible */
-    transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
-    width: 0;
-}
-
-/* On hover, the underline becomes visible */
-.nav-link:hover::after {
-    background-color: #ff5722; /* Underline color on hover */
-    width: 100%;
-}
-
-/* Active link underline stays visible */
-.nav-link.active::after {
-    width: 100%; /* Full width for the active page underline */
-    background-color: #ff5722; /* Underline color */
+    .navbar {
+        top: 10px;
+        left: 0;
+        right: 0;
+        transform: none;
+    }
 }
 
 /* Hero Section Styling */
@@ -128,6 +112,17 @@ body {
     font-size: 1.8em;
     margin-top: 10px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero h2 {
+        font-size: 1.2em;
+    }
 }
 
 /* CTA Button Style */
@@ -185,6 +180,18 @@ body {
     font-size: 1.1em;
     color: #666;
     margin-bottom: 20px;
+}
+
+/* Responsive Alternating Sections */
+@media (max-width: 768px) {
+    .alternating-section .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .alternating-section img, .alternating-section .text {
+        width: 100%;
+    }
 }
 
 /* Footer Section Styling */
